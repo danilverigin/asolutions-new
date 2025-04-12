@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Solutions</title>
+    <link rel="stylesheet" href="src/css/normalize.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <a href="#"><img src="src/img/Logo.svg" alt="Logo" /></a>
+          </div>
+          <button class="navbar__toggle" aria-label="Toggle menu">
+            <span class="navbar__toggle-line"></span>
+            <span class="navbar__toggle-line"></span>
+            <span class="navbar__toggle-line"></span>
+          </button>
+          <div class="navbar__menu">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Главная</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Услуги</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Тарифы</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Кейсы</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">О нас</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Блог</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Контакты</a>
+              </li>
+            </ul>
+            <button class="navbar__button" data-modal="consultation-modal">
+              Получить консультацию
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="overlay"></div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__text">
+            <h1 class="sr-only">Рост вашего бизнеса начинается с CRM</h1>
+            <h2 class="hero__title">
+              <span id="text"></span>
+              <span id="cursor">|</span>
+            </h2>
+            <p class="hero__description">
+              Автоматизируйте продажи, управляйте клиентами и масштабируйте
+              бизнес с A-Solutions Group
+            </p>
+            <button class="hero__button" data-modal="consultation-modal">
+              Увеличьте продажи с CRM
+            </button>
+          </div>
+          <div class="hero__image">
+            <img src="src/img/hero-img.jpg" alt="Team discussing CRM" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title section-title">Кто мы такие?</h2>
+        <p class="about__subtitle section-subtitle">
+          A-Solutions Group — ваш эксперт в автоматизации бизнеса с 2019 года
+        </p>
+        <div class="tabs">
+          <div class="tabs__nav">
+            <button class="tabs__button active" data-tab="mission">
+              Наша миссия
+            </button>
+            <button class="tabs__button" data-tab="experience">Наш опыт</button>
+            <button class="tabs__button" data-tab="clients">
+              Наши клиенты
+            </button>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__panel active" id="mission">
+              <p>
+                Мы помогаем бизнесу Казахстана и СНГ расти через внедрение
+                современных CRM-систем. Наша цель — сделать управление клиентами
+                и продажами простым, эффективным и доступным для компаний любого
+                масштаба. С 2019 года мы автоматизируем процессы, чтобы вы могли
+                сосредоточиться на главном — развитии своего дела.
+              </p>
+            </div>
+            <div class="tabs__panel" id="experience">
+              <p>
+                За 5 лет работы мы реализовали более 100 проектов по внедрению
+                CRM-систем, таких как amoCRM и Bitrix24. От стартапов до крупных
+                предприятий — наши решения работают в Алматы, Астане и за
+                пределами Казахстана. Мы знаем, как адаптировать технологии под
+                ваш бизнес.
+              </p>
+            </div>
+            <div class="tabs__panel" id="clients">
+              <p>
+                Мы работаем с бизнесом по всему Казахстану — от Алматы до
+                Астаны. Наши клиенты — это розничные сети, стартапы и малые
+                предприятия, которые увеличили продажи и оптимизировали процессы
+                с помощью CRM. Более 100 компаний доверили нам свои задачи, и мы
+                гордимся их успехом.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title section-title">
+          Наши услуги для вашего успеха
+        </h2>
+        <p class="services__subtitle section-subtitle">
+          Автоматизация, аналитика и обучение — всё, что нужно для эффективного
+          управления
+        </p>
+        <div class="services__list">
+          <!-- Группа 1 -->
+          <div class="services__item">
+            <div class="services__text">
+              <h3 class="services__item-title">Внедрение amoCRM</h3>
+              <p class="services__item-description">
+                Автоматизируйте продажи и управляйте клиентами с помощью amoCRM.
+                Мы настроим систему под ваш бизнес: от воронки продаж до
+                интеграции с мессенджерами. Увеличьте конверсии и сократите
+                рутинные задачи уже через неделю.
+              </p>
+              <button class="services__button" data-modal="consultation-modal">
+                Узнать больше
+              </button>
+            </div>
+            <div class="services__image">
+              <img src="src/img/services1.jpg" alt="Внедрение amoCRM" />
+            </div>
+          </div>
+          <!-- Группа 2 -->
+          <div class="services__item">
+            <div class="services__text">
+              <h3 class="services__item-title">Внедрение Bitrix24</h3>
+              <p class="services__item-description">
+                Bitrix24 — это комплексное решение для командной работы и
+                управления бизнесом. Мы подключим систему, настроим задачи, CRM
+                и аналитику, чтобы ваша команда работала как единое целое.
+                Идеально для роста и масштабирования.
+              </p>
+              <button class="services__button" data-modal="consultation-modal">
+                Узнать больше
+              </button>
+            </div>
+            <div class="services__image">
+              <img src="src/img/services2.jpg" alt="Внедрение Bitrix24" />
+            </div>
+          </div>
+          <!-- Здесь вы можете добавить ещё 2 группы с классом services__item -->
+          <!-- Группа 1 -->
+          <div class="services__item">
+            <div class="services__text">
+              <h3 class="services__item-title">Консалтинг и обучение</h3>
+              <p class="services__item-description">
+                Мы анализируем ваши процессы и обучаем команду работе с CRM. От
+                аудита отдела продаж до настройки эффективных воронок — вы
+                получите не просто инструмент, а стратегию успеха. Ваш бизнес
+                готов к новым высотам.
+              </p>
+              <button class="services__button" data-modal="consultation-modal">
+                Узнать больше
+              </button>
+            </div>
+            <div class="services__image">
+              <img src="src/img/services3.jpg" alt="Внедрение amoCRM" />
+            </div>
+          </div>
+          <!-- Группа 2 -->
+          <div class="services__item">
+            <div class="services__text">
+              <h3 class="services__item-title">Техническая поддержка</h3>
+              <p class="services__item-description">
+                Обеспечьте бесперебойную работу CRM с нашей поддержкой 24/7. Мы
+                решаем технические вопросы, обновляем системы и консультируем
+                вашу команду, чтобы вы могли сосредоточиться на бизнесе, а не на
+                проблемах.
+              </p>
+              <button class="services__button" data-modal="consultation-modal">
+                Узнать больше
+              </button>
+            </div>
+            <div class="services__image">
+              <img src="src/img/services2.jpg" alt="Внедрение Bitrix24" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <h2 class="benefits__title section-title">
+          Почему CRM — это ваш путь к успеху?
+        </h2>
+        <p class="benefits__subtitle section-subtitle">
+          Автоматизация, аналитика и рост продаж — всё в одном решении
+        </p>
+        <div class="benefits__image">
+          <img src="src/img/benefitsbig.png" alt="CRM Growth Illustration" />
+          <p class="benefits__image-caption">
+            Рынок CRM в Казахстане растёт на 15-20% ежегодно
+          </p>
+        </div>
+        <div class="benefits__columns">
+          <div class="benefits__column">
+            <h3 class="benefits__column-title">Автоматизация процессов</h3>
+            <p class="benefits__column-description">
+              Мы настраиваем ваши процессы в общем командном рабочем CRM. От
+              этапа лида до настройки эффективных воронок продаж — вы получите
+              не просто систему, а стратегию. Ваш бизнес готов к новым высотам.
+            </p>
+            <div class="benefits__column-image">
+              <img src="src/img/benefits1.png" alt="Automation Illustration" />
+            </div>
+          </div>
+          <div class="benefits__column">
+            <h3 class="benefits__column-title">Аналитика в реальном времени</h3>
+            <p class="benefits__column-description">
+              Контролируйте продажи и поведение клиентов прямо в CRM. Получайте
+              точные данные о воронке продаж, конверсиях и эффективности.
+              Принимайте решения быстрее благодаря отчётам, доступным в любой
+              момент.
+            </p>
+            <div class="benefits__column-image">
+              <img src="src/img/benefits2.png" alt="Analytics Illustration" />
+            </div>
+          </div>
+          <div class="benefits__column">
+            <h3 class="benefits__column-title">Улучшение клиентского опыта</h3>
+            <p class="benefits__column-description">
+              CRM повышает удовлетворённость клиентов. Она позволяет
+              персонализировать общение и оперативно отвечать на запросы. Это
+              создаёт постоянных лояльных клиентов. Сделайте своих клиентов
+              счастливее.
+            </p>
+            <div class="benefits__column-image">
+              <img
+                src="src/img/benefits3.png"
+                alt="Customer Experience Illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing">
+      <div class="container">
+        <h2 class="pricing__title section-title">
+          Выберите свой тариф для роста
+        </h2>
+        <p class="pricing__subtitle section-subtitle">
+          Гибкие планы для бизнеса любого размера — платите помесячно или
+          сэкономьте с годовой подпиской
+        </p>
+        <div class="pricing__description">
+          <p class="pricing__description-text">
+            amoCRM — для автоматизации продаж
+          </p>
+          <p class="pricing__description-subtext">
+            Простая и мощная CRM для малого и среднего бизнеса. Управляйте
+            клиентами, воронкой продаж и аналитикой в одном месте
+          </p>
+          <div class="pricing__toggle">
+            <div class="pricing__toggle-wrapper">
+              <button class="pricing__toggle-button active" data-period="year">
+                На год
+              </button>
+              <button class="pricing__toggle-button" data-period="month">
+                На месяц
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing__plans">
+          <div class="pricing__plan">
+            <h3 class="pricing__plan-title">Базовый</h3>
+            <p class="pricing__plan-description">
+              Подходит для стартапов и малого бизнеса с небольшой командой
+            </p>
+            <div class="pricing__plan-price" data-period="year">
+              <span class="pricing__plan-users">10 пользователей</span>
+              <span class="pricing__plan-old-price">49 990 тг/месяц</span>
+              <span class="pricing__plan-new-price">39 990 тг/месяц</span>
+            </div>
+            <div class="pricing__plan-price hidden" data-period="month">
+              <span class="pricing__plan-users">10 пользователей</span>
+              <!-- <span class="pricing__plan-old-price">49 990 тг/месяц</span> -->
+              <span class="pricing__plan-new-price">49 990 тг/месяц</span>
+            </div>
+            <ul class="pricing__plan-features">
+              <li>Базовая аналитика</li>
+              <li>Автоматизация воронки продаж</li>
+              <li>До 10 пользователей</li>
+            </ul>
+            <button class="pricing__plan-button">Выбрать тариф</button>
+          </div>
+          <div class="pricing__plan">
+            <h3 class="pricing__plan-title">Профессиональный</h3>
+            <p class="pricing__plan-description">
+              Подходит для стартапов и малого бизнеса с небольшой командой
+            </p>
+            <div class="pricing__plan-price" data-period="year">
+              <span class="pricing__plan-users">50 пользователей</span>
+              <span class="pricing__plan-old-price">99 990 тг/месяц</span>
+              <span class="pricing__plan-new-price">79 990 тг/месяц</span>
+            </div>
+            <div class="pricing__plan-price hidden" data-period="month">
+              <span class="pricing__plan-users">50 пользователей</span>
+              <!-- <span class="pricing__plan-old-price">99 990 тг/месяц</span> -->
+              <span class="pricing__plan-new-price">99 990 тг/месяц</span>
+            </div>
+            <ul class="pricing__plan-features">
+              <li>Расширенная аналитика</li>
+              <li>Интеграция с WhatsApp и Telegram</li>
+              <li>До 50 пользователей</li>
+              <li>Настройка прав доступа</li>
+            </ul>
+            <button class="pricing__plan-button">Выбрать тариф</button>
+          </div>
+          <div class="pricing__plan">
+            <h3 class="pricing__plan-title">Базовый</h3>
+            <p class="pricing__plan-description">
+              Подходит для стартапов и малого бизнеса с небольшой командой
+            </p>
+            <div class="pricing__plan-price" data-period="year">
+              <span class="pricing__plan-users">∞ пользователей</span>
+              <span class="pricing__plan-old-price">149 990 тг/месяц</span>
+              <span class="pricing__plan-new-price">119 990 тг/месяц</span>
+            </div>
+            <div class="pricing__plan-price hidden" data-period="month">
+              <span class="pricing__plan-users">∞ пользователей</span>
+              <!-- <span class="pricing__plan-old-price">149 990 тг/месяц</span> -->
+              <span class="pricing__plan-new-price">149 990 тг/месяц</span>
+            </div>
+            <ul class="pricing__plan-features">
+              <li>Полная аналитика</li>
+              <li>Автоматизация задач и продаж</li>
+              <li>Неограниченное число пользователей</li>
+              <li>Интеграция 24/7</li>
+            </ul>
+            <button class="pricing__plan-button">Выбрать тариф</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing pricing--bitrix">
+      <div class="container">
+        <h2 class="pricing__title">Bitrix24 — умное решение</h2>
+        <p class="pricing__subtitle">
+          CRM, управление задачами и командная работа в одном инструменте.
+          Подходит для бизнеса любого масштаба
+        </p>
+        <div class="pricing__description">
+          <p class="pricing__description-subtext">
+            *Указанная стоимость рассчитана на всю компанию, а не на каждого
+            отдельного пользователя.
+          </p>
+          <div class="pricing__toggle">
+            <div class="pricing__toggle-wrapper">
+              <button class="pricing__toggle-button active" data-period="year">
+                На год
+              </button>
+              <button class="pricing__toggle-button" data-period="month">
+                На месяц
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing__plans">
+          <div class="pricing__plan">
+            <h3 class="pricing__plan-title">Старт</h3>
+            <p class="pricing__plan-description">
+              Подходит для недавно начавшего бизнеса с небольшой командой
+            </p>
+            <div class="pricing__plan-price" data-period="year">
+              <span class="pricing__plan-users">5 пользователей</span>
+              <span class="pricing__plan-old-price">19 990 тг/месяц</span>
+              <span class="pricing__plan-new-price">15 990 тг/месяц</span>
+            </div>
+            <div class="pricing__plan-price hidden" data-period="month">
+              <span class="pricing__plan-users">5 пользователей</span>
+              <!-- <span class="pricing__plan-old-price">19 990 тг/месяц</span> -->
+              <span class="pricing__plan-new-price">19 990 тг/месяц</span>
+            </div>
+            <ul class="pricing__plan-features">
+              <li>Базовая CRM (лиды, сделки, контакты)</li>
+              <li>Управление задачами</li>
+              <li>Поддержка через чат</li>
+            </ul>
+            <button class="pricing__plan-button">Выбрать тариф</button>
+          </div>
+          <div class="pricing__plan">
+            <h3 class="pricing__plan-title">Стандарт</h3>
+            <p class="pricing__plan-description">
+              Подходит для среднего бизнеса с растущей командой
+            </p>
+            <div class="pricing__plan-price" data-period="year">
+              <span class="pricing__plan-users">50 пользователей</span>
+              <span class="pricing__plan-old-price">59 990 тг/месяц</span>
+              <span class="pricing__plan-new-price">47 990 тг/месяц</span>
+            </div>
+            <div class="pricing__plan-price hidden" data-period="month">
+              <span class="pricing__plan-users">50 пользователей</span>
+              <!-- <span class="pricing__plan-old-price">59 990 тг/месяц</span> -->
+              <span class="pricing__plan-new-price">59 990 тг/месяц</span>
+            </div>
+            <ul class="pricing__plan-features">
+              <li>Всё из Старта</li>
+              <li>Полная CRM (воронки, счета, аналитика)</li>
+              <li>Интеграция мессенджеров</li>
+              <li>Email-маркетинг и управление проектами</li>
+            </ul>
+            <button class="pricing__plan-button">Выбрать тариф</button>
+          </div>
+          <div class="pricing__plan">
+            <h3 class="pricing__plan-title">Профессиональный</h3>
+            <p class="pricing__plan-description">
+              Для крупной компании, которой нужна глубокая аналитика
+            </p>
+            <div class="pricing__plan-price" data-period="year">
+              <span class="pricing__plan-users">100 пользователей</span>
+              <span class="pricing__plan-old-price">119 990 тг/месяц</span>
+              <span class="pricing__plan-new-price">119 990 тг/месяц</span>
+            </div>
+            <div class="pricing__plan-price hidden" data-period="month">
+              <span class="pricing__plan-users">100 пользователей</span>
+              <!-- <span class="pricing__plan-old-price">119 990 тг/месяц</span> -->
+              <span class="pricing__plan-new-price">119 990 тг/месяц</span>
+            </div>
+            <ul class="pricing__plan-features">
+              <li>Всё из Стандарта</li>
+              <li>Автоматизация процессов (воронки)</li>
+              <li>Расширенные права в BI-аналитике</li>
+              <li>Поддержка корпоративного портала</li>
+            </ul>
+            <button class="pricing__plan-button">Выбрать тариф</button>
+          </div>
+          <div class="pricing__plan">
+            <h3 class="pricing__plan-title">Энтерпрайз</h3>
+            <p class="pricing__plan-description">
+              Для больших предприятий с филиалами и сложными процессами
+            </p>
+            <div
+              class="pricing__plan-price"
+              data-period="year"
+              data-base-price-year="159990"
+            >
+              <select class="pricing__plan-users-select">
+                <option value="250" selected>250 пользователей</option>
+                <option value="500">500 пользователей</option>
+                <option value="1000">1,000 пользователей</option>
+                <option value="2000">2,000 пользователей</option>
+                <option value="5000">5,000 пользователей</option>
+                <option value="10000">10,000 пользователей</option>
+              </select>
+              <span class="pricing__plan-old-price">199,990 тг/месяц</span>
+              <span class="pricing__plan-new-price">159,990 тг/месяц</span>
+            </div>
+            <div
+              class="pricing__plan-price hidden"
+              data-period="month"
+              data-base-price-month="199990"
+            >
+              <select class="pricing__plan-users-select">
+                <option value="250" selected>250 пользователей</option>
+                <option value="500">500 пользователей</option>
+                <option value="1000">1,000 пользователей</option>
+                <option value="2000">2,000 пользователей</option>
+                <option value="5000">5,000 пользователей</option>
+                <option value="10000">10,000 пользователей</option>
+              </select>
+              <!-- <span class="pricing__plan-old-price">199,990 тг/месяц</span> -->
+              <span class="pricing__plan-new-price">199,990 тг/месяц</span>
+            </div>
+            <ul class="pricing__plan-features">
+              <li>Всё из Профессионального</li>
+              <li>Управление филиалами</li>
+              <li>Приоритетная поддержка и персональный менеджер</li>
+            </ul>
+            <button class="pricing__plan-button">Выбрать тариф</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="success">
+      <div class="container">
+        <h2 class="success__title section-title">
+          Наши успехи — ваши возможности
+        </h2>
+        <p class="success__subtitle section-subtitle">
+          Посмотрите, как бизнес в Казахстане растёт с нашими CRM-решениями
+        </p>
+        <div class="success__cards">
+          <div class="success__card">
+            <div class="success__card-logo">
+              <img src="src/img/royal.png" alt="Royal Event Logo" />
+            </div>
+            <h3 class="success__card-title">Royal Event</h3>
+            <p class="success__card-description">
+              С помощью внедрения AmoCRM компания получила рост клиентских
+              результатов и увеличение конверсий на 30%. Результат:
+              автоматизация процессов, улучшение клиентского опыта,
+              автоматизация воронок.
+            </p>
+          </div>
+          <div class="success__card">
+            <div class="success__card-logo">
+              <img src="src/img/balance.png" alt="Balance Logo" />
+            </div>
+            <h3 class="success__card-title">Balance</h3>
+            <p class="success__card-description">
+              Проблема: Сложность передачи заявок для работы с клиентами через
+              WhatsApp, Telegram, Instagram, WhatsApp, Telegram API. Результат:
+              Увеличение скорости обработки заявок, рост конверсий.
+            </p>
+          </div>
+          <div class="success__card">
+            <div class="success__card-logo">
+              <img src="src/img/royal.png" alt="Viton KZ Logo" />
+            </div>
+            <h3 class="success__card-title">Viton.kz</h3>
+            <p class="success__card-description">
+              После интеграции AmoCRM через сайт компании, отстройка работы с
+              клиентами через WhatsApp и Instagram, интеграция автоматизации
+              воронок и отчётов. Результат: Рост продаж на 20%, рост конверсий.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <h2 class="faq__title section-title">Ответы на ваши вопросы</h2>
+        <p class="faq__subtitle section-subtitle">
+          Всё, что вы хотите знать о CRM и нашей работе
+        </p>
+        <div class="faq__list">
+          <div class="faq__item">
+            <button class="faq__question">
+              Что такое CRM и зачем она нужна моему бизнесу?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                CRM — это система для управления клиентами, продажами и
+                задачами. Она помогает автоматизировать рутину, отслеживать
+                воронку продаж и улучшать отношения с клиентами. Например, вы
+                всегда знаете, кто и на каком этапе покупки, а аналитика
+                показывает, как увеличить доход.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Сколько времени занимает внедрение CRM?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                В среднем, внедрение занимает от 3 до 14 дней, в зависимости от
+                сложности вашего бизнеса. Для малого бизнеса настройка amoCRM
+                может занять 3–5 дней, а Bitrix24 для крупных компаний — до 2
+                недель, включая обучение команды.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Какие CRM-системы вы предлагаете?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Мы специализируемся на amoCRM и Bitrix24. amoCRM идеальна для
+                автоматизации продаж, а Bitrix24 подходит для управления
+                задачами, проектами и командами. Мы подберем систему под ваши
+                цели.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Подходит ли CRM для малого бизнеса?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Да, CRM подходит для бизнеса любого размера! Для малого бизнеса
+                мы рекомендуем amoCRM (тариф Базовый) или Bitrix24 (Старт), это
+                доступные решения, которые помогут автоматизировать продажи,
+                управлять клиентами и увеличивать конверсии.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Нужно ли нанимать IT-специалиста для работы с CRM?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Нет, наши системы просты в использовании. Мы настраиваем CRM под
+                вас и обучаем команду за 1–2 дня. Если возникнут вопросы, наша
+                техподдержка доступна 24/7.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Можно ли интегрировать CRM с WhatsApp или Telegram?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Да, мы интегрируем CRM с WhatsApp, Telegram и другими
+                мессенджерами через Wazzup24. Это позволяет общаться с клиентами
+                прямо в системе и фиксировать все диалоги. Стоимость настройки —
+                от 18 990 тг.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Что делать, если у меня уже есть другая CRM?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Мы поможем перенести данные из вашей текущей CRM в amoCRM или
+                Bitrix24. Процесс включает экспорт контактов, сделок и истории,
+                чтобы вы не потеряли важную информацию.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Как понять, какой тариф выбрать?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Мы проводим бесплатный аудит вашего бизнеса и подбираем тариф
+                под ваши задачи. Например, для стартапов подойдет amoCRM
+                Базовый, а для крупных компаний — Bitrix24 Энтерпрайз. Свяжитесь
+                с нами для консультации!
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Есть ли у вас поддержка после внедрения?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Да, мы предоставляем техподдержку 24/7. Вы можете обратиться по
+                телефону, email или чату. Для тарифа Премиум (amoCRM) и
+                Энтерпрайз (Bitrix24) доступен персональный менеджер.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Сколько стоит обучение команды работе с CRM?
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Обучение входит в стоимость внедрения и занимает 1–2 дня. Мы
+                проводим тренинги для вашей команды, чтобы каждый сотрудник мог
+                эффективно использовать CRM. Дополнительное обучение — от 10 000
+                тг за сессию.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="articles">
+      <div class="container">
+        <h2 class="articles__title">Полезные статьи для вашего бизнеса</h2>
+        <p class="articles__subtitle">
+          Советы, кейсы и идеи, чтобы вывести ваш бизнес на новый уровень
+        </p>
+        <div class="articles__list">
+          <div class="articles__item articles__item--blue1">
+            <div class="articles__item-image"></div>
+            <div class="articles__item-content">
+              <h3 class="articles__item-title">
+                Как CRM помогает регулировать в Казахстане
+              </h3>
+              <p class="articles__item-description">
+                Регулирование в Казахстане требует чёткости. CRM-системы
+                помогают автоматизировать процессы, хранить данные и делать
+                бизнес прозрачным. Читайте, как amoCRM изменила работу в Астане.
+              </p>
+              <button class="articles__item-button" data-modal="modal-1">
+                Читать далее
+              </button>
+            </div>
+          </div>
+          <div class="articles__item articles__item--red1">
+            <div class="articles__item-image"></div>
+            <div class="articles__item-content">
+              <h3 class="articles__item-title">
+                5 ошибок внедрения CRM и как их избежать
+              </h3>
+              <p class="articles__item-description">
+                Многие компании сталкиваются с проблемами внедрения CRM: от
+                сопротивления сотрудников до неправильного выбора тарифа.
+                Узнайте, как избежать ошибок.
+              </p>
+              <button class="articles__item-button" data-modal="modal-2">
+                Читать далее
+              </button>
+            </div>
+          </div>
+          <div class="articles__item articles__item--red2">
+            <div class="articles__item-image"></div>
+            <div class="articles__item-content">
+              <h3 class="articles__item-title">
+                Как CRM увеличивает продажи автосервиса на 20%
+              </h3>
+              <p class="articles__item-description">
+                Автосервис в Караганде через CRM увеличил продажи за счёт
+                автоматизации заявок, активации клиентов и аналитики. Читайте
+                кейс.
+              </p>
+              <button class="articles__item-button" data-modal="modal-3">
+                Читать далее
+              </button>
+            </div>
+          </div>
+          <div class="articles__item articles__item--blue2">
+            <div class="articles__item-image"></div>
+            <div class="articles__item-content">
+              <h3 class="articles__item-title">
+                Почему Bitrix24 — лучший выбор для среднего бизнеса
+              </h3>
+              <p class="articles__item-description">
+                Bitrix24 объединяет CRM, задачи и аналитику. Узнайте, как он
+                помогает в автоматизации продаж и аналитики компаний в Алматы.
+              </p>
+              <button class="articles__item-button" data-modal="modal-4">
+                Читать далее
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Секция формы обратной связи -->
+    <section class="contact">
+      <div class="container">
+        <h2 class="contact__title">Свяжитесь с нами</h2>
+        <p class="contact__subtitle">
+          Оставьте заявку, и мы поможем подобрать лучшее CRM-решение для вашего
+          бизнеса
+        </p>
+        <form class="contact__form" id="contact-form">
+          <div class="contact__form-group">
+            <input
+              type="text"
+              class="contact__input"
+              placeholder="Ваше имя"
+              name="name"
+              required
+            />
+          </div>
+          <div class="contact__form-group">
+            <input
+              type="email"
+              class="contact__input"
+              placeholder="Ваш email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="contact__form-group">
+            <textarea
+              class="contact__textarea"
+              placeholder="Опишите ваш вопрос или задачу"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="contact__button">
+            Отправить заявку
+          </button>
+        </form>
+        <div class="contact__info">
+          <p class="contact__info-item">
+            Телефон: <a href="tel:+77475373787">+7 (747) 537 37 87</a>
+          </p>
+          <p class="contact__info-item">
+            Email:
+            <a href="mailto:nazim.sadykov.98@gmail.com"
+              >nazim.sadykov.98@gmail.com</a
+            >
+          </p>
+          <div class="contact__socials">
+            <a href="#" class="contact__social-link">
+              <img src="src/img/ic_baseline-whatsapp.svg" alt="WhatsApp" />
+            </a>
+            <a href="#" class="contact__social-link">
+              <img src="src/img/mdi_instagram.svg" alt="Instagram" />
+            </a>
+            <a href="#" class="contact__social-link">
+              <img src="src/img/ic_baseline-telegram.svg" alt="Telegram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__logo">A-Solutions Group</div>
+          <div class="footer__info">
+            <p class="footer__info-item">
+              Телефон: <a href="tel:+77475373787">+7 (747) 537 37 87</a>
+            </p>
+            <p class="footer__info-item">
+              Email:
+              <a href="mailto:nazim.sadykov.98@gmail.com"
+                >nazim.sadykov.98@gmail.com</a
+              >
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-link">
+                <img src="src/img/ic_baseline-whatsapp.svg" alt="WhatsApp" />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="src/img/mdi_instagram.svg" alt="Instagram" />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="src/img/ic_baseline-telegram.svg" alt="Telegram" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2025 A-Solutions Group. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-overlay">
+      <div class="modal" id="modal-1">
+        <button class="modal__close">×</button>
+        <div class="modal__image"></div>
+        <!-- Добавляем контейнер для изображения -->
+        <h3 class="modal__title">Как CRM помогает регулировать в Казахстане</h3>
+        <div class="modal__content">
+          <p>
+            Ритейл в Казахстане сталкивается с вызовами: высокая конкуренция,
+            необходимость быстрого обслуживания и удержания клиентов.
+            CRM-системы, такие как amoCRM, решают эти проблемы, автоматизируя
+            ключевые процессы.
+            <br />
+            <br />
+            Почему CRM важна для ритейла?
+            <br />
+            <br />
+            Единая база клиентов: Все данные о покупателях — от контактов до
+            истории заказов — хранятся в одном месте. Например, сеть магазинов в
+            Алматы с помощью amoCRM сократила время на поиск данных клиента с 10
+            минут до 30 секунд. Автоматизация продаж: CRM позволяет настроить
+            воронку продаж, автоматически отправлять напоминания и отслеживать
+            статус заказа. Это особенно важно для онлайн-магазинов, где клиенты
+            ожидают моментальных ответов. Аналитика: С CRM вы видите, какие
+            товары продаются лучше, а какие каналы (например, Instagram или
+            WhatsApp) приносят больше лидов. Пример из практики: Магазин одежды
+            в Астане внедрил amoCRM с интеграцией WhatsApp. За 3 месяца
+            конверсия из заявок в покупки выросла на 25%, а повторные продажи
+            увеличились на 15% благодаря персонализированным предложениям.
+            <br />
+            <br />
+            Как начать?
+            <br />
+            <br />
+            Начните с тарифа Базовый (49 990 тг/месяц для всей компании). Мы
+            настроим систему за 3–5 дней и обучим вашу команду. Свяжитесь с
+            нами, чтобы узнать, как CRM подойдет вашему ритейлу!
+          </p>
+        </div>
+        <button class="modal__button" data-modal="consultation-modal">
+          Попробовать CRM
+        </button>
+      </div>
+      <div class="modal" id="modal-2">
+        <button class="modal__close">×</button>
+        <div class="modal__image"></div>
+        <!-- Добавляем контейнер для изображения -->
+        <h3 class="modal__title">5 ошибок внедрения CRM и как их избежать</h3>
+        <div class="modal__content">
+          <p>
+            Внедрение CRM — это шаг к автоматизации и росту, но ошибки на старте
+            могут замедлить прогресс. Вот 5 типичных проблем и советы, как их
+            обойти.
+            <br />
+            <br />
+            1. Неправильный выбор системы <br /><br />
+
+            Выбор CRM без учета задач бизнеса приводит к лишним затратам.
+            Например, малому бизнесу в Шымкенте подойдет amoCRM Базовый, а
+            крупной компании в Астане — Bitrix24 Профессиональный. Решение:
+            Проведите аудит процессов с экспертом (мы делаем это бесплатно).
+            <br /><br />
+            2. Отсутствие интеграций
+            <br /><br />
+            Без подключения WhatsApp или телефонии CRM теряет эффективность.
+            Клиенты в Казахстане часто пишут в мессенджеры, и без интеграции вы
+            теряете лиды.
+            <br /><br />
+            Решение: Добавьте интеграцию за 18 990 тг — это окупается за месяц.
+            <br /><br />
+            3. Недостаточное обучение
+            <br />
+            <br />
+            Если команда не знает, как использовать CRM, система простаивает. Мы
+            видели, как компании теряли месяцы из-за этого.
+            <br />
+            <br />
+            Решение: Наши тренинги занимают 1–2 дня и входят в стоимость
+            внедрения.
+            <br />
+            <br />
+            4. Игнорирование аналитики
+            <br />
+            <br />
+            CRM дает данные о продажах и клиентах, но без их анализа вы не
+            видите слабых мест. Например, магазин в Караганде увеличил продажи
+            на 20%, просто настроив отчеты.
+            <br /><br />
+            Решение: Используйте встроенные отчеты или наш консалтинг.
+            <br />
+            <br />
+            5. Отсутствие поддержки
+            <br /><br />
+            Технические вопросы могут тормозить работу. Без поддержки вы
+            рискуете застрять.
+            <br /><br />
+            Решение: Выбирайте тариф с поддержкой 24/7 (например, Премиум) или
+            нашу техподдержку.
+            <br /><br />
+            Что дальше?
+            <br /><br />
+            Избежать ошибок проще с опытным партнером. Мы внедрили CRM для 100+
+            компаний в Казахстане и знаем, как сделать процесс гладким. Оставьте
+            заявку, и мы начнем с бесплатной консультации!
+          </p>
+        </div>
+        <button class="modal__button" data-modal="consultation-modal">
+          Попробовать CRM
+        </button>
+      </div>
+      <div class="modal" id="modal-3">
+        <button class="modal__close">×</button>
+        <div class="modal__image"></div>
+        <!-- Добавляем контейнер для изображения -->
+        <h3 class="modal__title">
+          Как CRM увеличивает продажи автосервиса на 20%
+        </h3>
+        <div class="modal__content">
+          <p>
+            Автосервис в Усть-Каменогорске столкнулся с проблемой: клиенты
+            записывались, но из-за отсутствия системы учета многие не
+            возвращались. Решением стала amoCRM, внедренная нашей командой.
+            <br /><br />
+            Проблема
+            <br /><br />
+            Менеджеры записывали клиентов в тетрадь или Excel, часто теряя
+            данные. Повторные визиты были редкостью, а о маркетинге не было и
+            речи.
+            <br /><br />
+            Решение
+            <br /><br />
+            Мы выбрали amoCRM (тариф Продвинутый) и сделали следующее:
+            <br /><br />
+            Настроили воронку продаж: от записи до завершения услуги.
+            Интегрировали Telegram для быстрого общения (18 990 тг). Обучили 4
+            сотрудников за 2 дня. Настроили автоматические напоминания о
+            визитах. Результат
+            <br /><br />
+            За 2 месяца автосервис добился:
+            <br /><br />
+            Роста продаж на 20% за счет повторных клиентов. Сокращения времени
+            на запись с 10 до 2 минут. Увеличения клиентской базы на 15%
+            благодаря фиксации всех заявок. Почему это работает?
+            <br /><br />
+            CRM позволила автоматизировать рутину и сосредоточиться на клиентах.
+            Аналитика показала, какие услуги приносят больше дохода, а
+            напоминания сократили отмены на 30%.
+            <br /><br />
+            Хотите так же?
+            <br /><br />
+            Мы внедрим CRM для вашего автосервиса или другого бизнеса за 3–7
+            дней. Оставьте заявку, и мы начнем с аудита ваших процессов!
+          </p>
+        </div>
+        <button class="modal__button" data-modal="consultation-modal">
+          Попробовать CRM
+        </button>
+      </div>
+      <div class="modal" id="modal-4">
+        <button class="modal__close">×</button>
+        <div class="modal__image"></div>
+        <!-- Добавляем контейнер для изображения -->
+        <h3 class="modal__title">
+          Почему Bitrix24 — лучший выбор для среднего бизнеса
+        </h3>
+        <div class="modal__content">
+          <p>
+            Средний бизнес в Казахстане часто сталкивается с задачей: как
+            управлять растущей командой, клиентами и проектами одновременно?
+            Bitrix24 — это универсальное решение, которое закрывает все эти
+            вопросы.
+            <br /><br />
+            Преимущества Bitrix24
+            <br /><br />
+            CRM для продаж: Управляйте лидами, сделками и счетами. Например,
+            маркетинговое агентство в Алматы увеличило конверсию на 18% с
+            помощью воронки продаж. Задачи и проекты: Назначайте задачи,
+            отслеживайте сроки и работайте в команде. Логистическая компания в
+            Астане сократила время на проекты на 20 часов в неделю.
+            Коммуникации: Чаты, видеозвонки и интеграция с мессенджерами
+            (WhatsApp, Telegram) позволяют быть на связи с клиентами и
+            коллегами. Аналитика: Отчеты показывают эффективность сотрудников и
+            каналов продаж. Почему средний бизнес выбирает Bitrix24?
+            <br /><br />
+            С тарифом Стандарт (59 990 тг/месяц) вы получаете полный набор
+            инструментов для 50 пользователей. Это дешевле, чем нанимать лишних
+            сотрудников, и эффективнее, чем разрозненные программы.
+            <br /><br />
+            Наш опыт
+            <br /><br />
+            Мы внедрили Bitrix24 для 50+ компаний в Казахстане. Например,
+            IT-компания в Астане перешла на тариф Профессиональный и за 3 месяца
+            увеличила доход на 25% за счет автоматизации.
+            <br /><br />
+            Готовы попробовать?
+            <br /><br />
+            Мы настроим Bitrix24 за 5–10 дней и обучим вашу команду. Оставьте
+            заявку, чтобы обсудить, как система подойдет вашему бизнесу!
+          </p>
+        </div>
+        <button class="modal__button" data-modal="consultation-modal">
+          Попробовать CRM
+        </button>
+      </div>
+      <div class="modal" id="consultation-modal">
+        <button class="modal__close">×</button>
+        <h3 class="modal__title">Заявка на консультацию</h3>
+        <div class="modal__content">
+          <p id="consultation-plan-info"></p>
+          <form class="consultation__form" id="consultation-form">
+            <div class="consultation__form-group">
+              <input
+                type="text"
+                class="consultation__input form-input"
+                placeholder="Ваше имя"
+                name="name"
+                required
+              />
+            </div>
+            <div class="consultation__form-group">
+              <input
+                type="email"
+                class="consultation__input form-input"
+                placeholder="Ваш email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="consultation__form-group">
+              <input
+                type="tel"
+                class="consultation__input form-input"
+                placeholder="Ваш телефон"
+                name="phone"
+                required
+              />
+            </div>
+            <div class="consultation__form-group">
+              <textarea
+                class="consultation__textarea"
+                placeholder="Комментарий (необязательно)"
+                name="comment"
+              ></textarea>
+            </div>
+            <button type="submit" class="consultation__button">
+              Отправить заявку
+            </button>
+          </form>
+          <div class="consultation__success" style="display: none">
+            <p>
+              Заявка успешно отправлена! Ожидайте звонка, мы свяжемся с вами в
+              ближайшее время.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="src/js/main.js"></script>
+  </body>
+</html>

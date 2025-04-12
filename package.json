@@ -1,0 +1,18 @@
+{
+  "name": "asolutions",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "postcss": "^8.5.3",
+    "postcss-pxtorem": "^6.1.0",
+    "terser": "^5.39.0",
+    "vite": "^6.2.0",
+    "vite-plugin-compression": "^0.5.1"
+  }
+}

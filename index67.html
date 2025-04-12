@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Эффект набора текста</title>
+    <style>
+      #textElement {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      #cursor {
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="textElement">
+      <span id="text"></span>
+      <span id="cursor">|</span>
+    </div>
+
+    <script>
+      async function typeText(textSpan, text, speed = 100) {
+        textSpan.innerHTML = "";
+        for (let char of text) {
+          textSpan.innerHTML += char;
+          await new Promise((res) => setTimeout(res, speed));
+        }
+      }
+
+      async function eraseText(textSpan, speed = 100) {
+        const text = textSpan.innerHTML;
+        for (let i = text.length - 1; i >= 0; i--) {
+          textSpan.innerHTML = text.substring(0, i);
+          await new Promise((res) => setTimeout(res, speed));
+        }
+      }
+
+      async function main() {
+        const textSpan = document.getElementById("text");
+        const texts = [
+          "Создаем сайты быстро и качественно",
+          "Ваши идеи - наша реализация",
+          "Эффективные решения для бизнеса",
+          "Дизайн, который привлекает клиентов",
+          "Технологии будущего уже сегодня",
+        ];
+        const speed = 100;
+
+        while (true) {
+          // Бесконечный цикл для повторения
+          for (let text of texts) {
+            await typeText(textSpan, text, speed);
+            await new Promise((res) => setTimeout(res, 5000)); // Ждем 5 секунд
+            await eraseText(textSpan, speed); // Анимированное стирание
+          }
+        }
+      }
+
+      main();
+    </script>
+  </body>
+</html>

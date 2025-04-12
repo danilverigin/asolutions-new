@@ -11,7 +11,9 @@ body {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -785,6 +787,7 @@ section-subtitle {
 }
 
 .pricing__plan-new-price {
+  text-align: center;
   display: block;
   font-weight: 600;
   font-size: 24px;
@@ -1781,6 +1784,7 @@ section-subtitle {
   }
 
   .pricing__plan-new-price {
+    text-align: center;
     font-size: 22px;
   }
   .pricing__plan-users-select {
@@ -1956,6 +1960,9 @@ section-subtitle {
   #consultation-modal {
     width: 90%;
     padding: 20px;
+  }
+  .benefits__image img {
+    max-width: 80%;
   }
 }
 

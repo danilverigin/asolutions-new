@@ -4,6 +4,7 @@ import compression from 'vite-plugin-compression';
 const require = createRequire(import.meta.url);
 
 export default defineConfig({
+  base: '/asolutions-new/',
   css: {
     postcss: {
       plugins: [

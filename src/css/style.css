@@ -1552,6 +1552,9 @@ section-subtitle {
   .hero .container {
     padding: 0;
   }
+  .about {
+    margin-top: 20px;
+  }
   .services__item {
     flex-direction: column;
     gap: 20px;
@@ -1933,7 +1936,9 @@ section-subtitle {
   .footer__info-item {
     font-size: 14px;
   }
-
+  .footer__socials {
+    justify-content: center;
+  }
   .footer__social-link img {
     width: 25px;
     height: 25px;

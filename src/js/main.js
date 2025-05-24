@@ -26,6 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const pricingPlanButtons = document.querySelectorAll('.pricing__plan-button');
   const contactForm = document.getElementById('contact-form');
 
+  // --- Установка статического заголовка в hero
+  const heroTextSpan = document.getElementById('text');
+  if (heroTextSpan) {
+    heroTextSpan.textContent = 'Рост вашего бизнеса начинается с CRM';
+  }
+
   // --- Меню
   function toggleMenu() {
     toggleButton.classList.toggle('open');
@@ -46,46 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.addEventListener('click', closeMenu);
     links.forEach((link) => link.addEventListener('click', closeMenu));
     button?.addEventListener('click', closeMenu);
-  }
-
-  // --- Анимация текста в hero
-  const typeText = async (el, text, speed = 100) => {
-    el.textContent = '';
-    for (let char of text) {
-      el.textContent += char;
-      await new Promise((r) => setTimeout(r, speed));
-    }
-  };
-
-  const eraseText = async (el, speed = 50) => {
-    while (el.textContent.length > 0) {
-      el.textContent = el.textContent.slice(0, -1);
-      await new Promise((r) => setTimeout(r, speed));
-    }
-  };
-
-  const heroTextSpan = document.getElementById('text');
-  const heroTexts = [
-    'Рост вашего бизнеса начинается с CRM',
-    'Автоматизация с A-Solutions Group',
-    'Увеличьте продажи и лояльность клиентов',
-    'CRM для бизнеса: выведите свою компанию на новый уровень!',
-    'Внедрение CRM: оптимизируйте процессы и увеличьте прибыль',
-    'Эффективный бизнес с CRM: от лидов до лояльных клиентов',
-    'Индивидуальные CRM решения для роста вашего бизнеса',
-    'Управляйте будущим своего бизнеса с помощью современной CRM',
-  ];
-
-  if (heroTextSpan) {
-    let i = 0;
-    const animate = async () => {
-      await typeText(heroTextSpan, heroTexts[i]);
-      await new Promise((r) => setTimeout(r, 3000));
-      await eraseText(heroTextSpan);
-      i = (i + 1) % heroTexts.length;
-      animate();
-    };
-    animate();
   }
 
   // --- Табы
@@ -184,9 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
   modalButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
       const id = btn.getAttribute('data-modal');
-      // Закрываем все текущие модальные окна перед открытием нового
       closeModal();
-      // Открываем новое модальное окно с небольшой задержкой для плавности
       setTimeout(() => openModal(id), 300);
     });
   });

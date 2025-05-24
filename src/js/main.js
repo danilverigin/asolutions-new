@@ -186,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- Обработка спец-кнопок
+  // 52524
   heroButton?.addEventListener('click', () =>
     openModal('consultation-modal', 'Вы хотите увеличить продажи с CRM')
   );

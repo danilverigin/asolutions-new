@@ -214,4 +214,71 @@ document.addEventListener('DOMContentLoaded', () => {
       openModal('consultation-modal', `Вы выбрали тариф "${title}" (${users})`);
     });
   });
+  const promoWidget = document.querySelector('.promo-widget');
+  const promoWidgetClose = document.querySelector('.promo-widget__close');
+  const promoWidgetButton = document.querySelector('.promo-widget__button');
+
+  if (promoWidget && promoWidgetClose && promoWidgetButton) {
+    // Show widget after 5 seconds with animation
+    setTimeout(() => {
+      promoWidget.classList.remove('hidden');
+      setTimeout(() => {
+        promoWidget.classList.add('visible');
+      }, 10); // Small delay to ensure display:none is removed before animation
+    }, 5000);
+
+    promoWidgetClose.addEventListener('click', () => {
+      promoWidget.classList.remove('visible');
+      setTimeout(() => {
+        promoWidget.classList.add('hidden');
+      }, 500); // Match transition duration
+    });
+
+    promoWidgetButton.addEventListener('click', () => {
+      promoWidget.classList.remove('visible');
+      setTimeout(() => {
+        promoWidget.classList.add('hidden');
+      }, 500); // Match transition duration
+      openModal(
+        'consultation-modal',
+        'Вы хотите получить скидку 10% на внедрение CRM'
+      );
+    });
+
+    // Countdown timer
+    const deadline = new Date('2025-06-10T23:59:59');
+    const daysSpan = document.getElementById('countdown-days');
+    const hoursSpan = document.getElementById('countdown-hours');
+    const minutesSpan = document.getElementById('countdown-minutes');
+    const secondsSpan = document.getElementById('countdown-seconds');
+
+    function updateCountdown() {
+      const now = new Date();
+      const timeRemaining = deadline - now;
+
+      if (timeRemaining <= 0) {
+        promoWidget.classList.add('hidden');
+        return;
+      }
+
+      const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor(
+        (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+      );
+      const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+      daysSpan.textContent = days;
+      hoursSpan.textContent = hours.toString().padStart(2, '0');
+      minutesSpan.textContent = minutes.toString().padStart(2, '0');
+      secondsSpan.textContent = seconds.toString().padStart(2, '0');
+    }
+
+    if (daysSpan && hoursSpan && minutesSpan && secondsSpan) {
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    }
+  }
 });

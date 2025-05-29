@@ -141,7 +141,169 @@ section-subtitle {
 #service-modal-4 .modal__content p {
   color: #fff;
 }
+/* Promotional Widget */
+.promo-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: var(--accent-blue);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001; /* Above other content, but below modals */
+  color: var(--white-color);
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 0;
+  transform: translateX(100px); /* Start off-screen to the right */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
 
+.promo-widget.visible {
+  opacity: 1;
+  transform: translateX(0); /* Slide to original position */
+}
+
+.promo-widget.hidden {
+  display: none;
+}
+
+.promo-widget__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.promo-widget__close:hover {
+  color: #ff4d4d;
+}
+
+.promo-widget__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.promo-widget__description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.promo-widget__countdown {
+  margin-bottom: 15px;
+}
+
+.promo-widget__countdown-label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.promo-widget__countdown-timer {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--second-family);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.promo-widget__countdown-timer span {
+  color: #fff;
+}
+
+.promo-widget__button {
+  padding: 10px 20px;
+  background-color: var(--white-color);
+  color: var(--accent-blue);
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.promo-widget__button:hover {
+  background-color: #e0e0e0;
+  color: #0f2db3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .promo-widget {
+    width: 260px;
+    padding: 15px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .promo-widget__title {
+    font-size: 16px;
+  }
+
+  .promo-widget__description {
+    font-size: 13px;
+  }
+
+  .promo-widget__countdown-label {
+    font-size: 13px;
+  }
+
+  .promo-widget__countdown-timer {
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .promo-widget__button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .promo-widget {
+    width: 220px;
+    padding: 12px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .promo-widget__title {
+    font-size: 14px;
+  }
+
+  .promo-widget__description {
+    font-size: 12px;
+  }
+
+  .promo-widget__countdown-label {
+    font-size: 12px;
+  }
+
+  .promo-widget__countdown-timer {
+    font-size: 13px;
+    gap: 5px;
+  }
+
+  .promo-widget__button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
 /* Контейнер */
 .container {
   max-width: 1400px;
